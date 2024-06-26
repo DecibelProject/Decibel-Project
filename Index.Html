@@ -1,0 +1,162 @@
+<!DocType Html>
+<Html>
+<Head>
+<Title>Decibel Project</Title>
+<Meta Http-Equiv = "Content-Type" Content = "Text/Html; Charset = Utf-8" />
+<Link Rel = "StyleSheet" Type = "Text/Css" Href = "Css/MainCss.Css" Media = "Screen" />
+
+<Link Rel = "Icon" Type="Image/X-Icon" Href = "Images/Favicon.ico">
+<Link Rel = "PreConnect" Href = "https://fonts.googleapis.com">
+<Link Rel = "PreConnect" Href = "https://fonts.gstatic.com" CrossOrigin>
+<Link Href = "https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" Rel = "StyleSheet">
+<Script Type = "Text/JavaScript" Src = "Js/JavaScript.Js"></Script>
+</Head>
+<Body>
+<Div Id = "Decibel">
+<Div Id = "Header">
+<H1>Decibel Project</H1>
+<Img Src = "Images/Print.png" Width = "180Px" Height = "85Px"/>
+<Div Id = "Links">
+<Ul>
+<Li Class = "Active"><A Href = "Decibel Project">Главная</A></Li>
+<Li><A Href = "Decibel Project">Скачивание</A></Li>
+<Li><A Href = "Decibel Project">Статьи</A></Li>
+<Li><A Href = "Decibel Project">Новости</A></Li>
+<Li><A Href = "Decibel Project">Форум</A></Li>
+<Li><A Href = "Decibel Project">О проекте</A></Li>
+</Ul>
+</Div>
+</Div>
+</Div>
+<Div Id = "DecibelProject">
+<H2>Decibel Project</H2>
+<H3 Align = "Center">Эта площадка для программистов, дизайнеров, разработчиков, <Br>и для всех людей мира It.</H3>
+<A Href = "Button"><Button>Перейти в каталог</Button></A>
+</Div>
+<Div Class = "Categories" Id = "Categories">
+<H4>Категории программ</H4>
+<H3 Align = "Center">В нашем каталоге есть сотни различных программ из разных категорий, которые <Br>могут быть полезны каждому. Самые популярные категории есть здесь.</H3>
+<Div Class="Category">
+    <Button Class="CategoriesButton" Id="LeftCategoriesButton"><Img Src = "Images/Left.png" /></Button>
+    <Div Class="Cubes" Id="Cubes">
+    <Div Class="Cube Left" Id="Cube1">
+    <Img Src = "Categories/WireLessLogo.png" alt="Интернет">
+    <H1>Интернет</H1>
+    <P>Браузеры и веб-сёрфинг</p>
+    <A Href = ""><Button>Подробнее</Button></A>
+    </Div>
+    <Div Class="Cube Center" Id="Cube2">
+    <Img Src="Categories/SecurityLogo.png" alt="Безопасность">
+    <H1>Безопасность</H1>
+    <P>Антивирусы и защита компьютера</p>
+    <A Href = ""><Button>Подробнее</Button></A>
+    </Div>
+    <Div Class="Cube Right" Id="Cube3">
+    <Img Src="Categories/UtilityLogo.png" alt="Утилиты">
+    <H1>Утилиты</H1>
+    <P>Архиваторы, кастомизация, ресурсы</p>
+    <A Href = ""><Button>Подробнее</Button></A>
+    </Div>
+    <Div Class="Cube" Id="Cube4">
+    <Img Src="Categories/DeveloperForLogo.png" alt="Разработчику">
+    <H1>Разработчику</H1>
+    <P>Среды разработки, компиляторы и прочее</p>
+    <A Href = ""><Button>Подробнее</Button></A>
+    </Div>
+    <Div Class="Cube" Id="Cube5">
+    <Img Src="Categories/MediaLogo.png" alt="Медиа">
+    <H1>Медиа</H1>
+    <P>Воспроизведение и конвертация</p>
+    <A Href = ""><Button>Подробнее</Button></A>
+    </Div>
+    <Div Class="Cube" Id="Cube6">
+    <Img Src="Categories/TorrentLogo.png" alt="Torrent">
+    <H1>Torrent</H1>
+    <P>Клиенты и загрузчики файлов</p>
+    <A Href = ""><Button>Подробнее</Button></A>
+    </Div>
+    <Div Class="Cube" Id="Cube7">
+    <Img Src="Categories/OfficeLogo.png" alt="Офисные программы">
+    <H1>Офисные программы</H1>
+    <P>Редакторы, презентации и другое</p>
+    <A Href = ""><Button>Подробнее</Button></A>
+    </Div>
+    </Div>
+    <Button Class="CategoriesButton" Id="RightCategoriesButton"><Img Src = "Images/Right.png" /></Button>
+    </Div>
+</Div>
+
+
+
+
+
+
+
+    <Div Class = "DialogCookies" Id = "CookiesDialogId">
+        <Div Class = "DialogCookiesContent">
+            <P>Этот сайт использует Cookies для более удобной работы пользователей. <A Href="#">Подробнее.</A></P>
+            <A Href = ""><Button Id="acceptCookies" Class="CookiesButton">Согласиться</Button></A>
+        </Div>
+    </Div>
+<Script>
+        const Cubes = document.querySelectorAll('.Cube');
+        const LeftBtn = document.getElementById('LeftCategoriesButton');
+        const RightBtn = document.getElementById('RightCategoriesButton');
+        let currentIndex = 1;
+
+        function updateCubes() {
+            Cubes.forEach((Cube, index) => {
+                Cube.classList.remove('Left', 'Center', 'Right', 'Visible');
+                if (index === currentIndex - 1) {
+                    Cube.classList.add('Left', 'Visible');
+                } else if (index === currentIndex) {
+                    Cube.classList.add('Center', 'Visible');
+                } else if (index === (currentIndex + 1) % Cubes.length) {
+                    Cube.classList.add('Right', 'Visible');
+                }
+            });
+        }
+
+        LeftBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + Cubes.length) % Cubes.length;
+            updateCubes();
+        });
+
+        RightBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % Cubes.length;
+            updateCubes();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCubes();
+        });
+		
+    document.addEventListener('DOMContentLoaded', function() {
+    const CookiesDialogId = document.getElementById('CookiesDialogId');
+    const acceptButton = document.getElementById('acceptCookies');
+    const cookieConsent = localStorage.getItem('cookieConsent');
+
+    if (!cookieConsent) {
+        setTimeout(() => {
+            CookiesDialogId.classList.add('show');
+        }, 1000); 
+    }
+
+    acceptButton.addEventListener('click', function() {
+        CookiesDialogId.classList.remove('show');
+        localStorage.setItem('cookieConsent', 'accepted');
+    });
+});
+</Script>
+
+
+
+
+
+
+
+
+
+
+</Body>
+</Html>

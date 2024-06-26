@@ -1,0 +1,397 @@
+
+/* Decibel Project Main Css File */
+
+Html {
+	Margin: 0;
+}
+
+Body {
+	Background:  Url("../Images/BackLine.png");
+	Font-Family: "Jost", Sans-Serif;
+	Max-Width: 100%;
+	Margin: 0;
+}
+
+#Decibel {
+	Margin: 0;
+	Display: Flex;
+}
+
+#Header {
+	Background: #2C7873;
+	Width: 100%;
+	Height: 85Px;
+	Margin: 0;
+	Align-Items: Center;
+	Display: Flex;
+}
+
+#Header Img {
+	Margin-Left: 20Px;
+}
+
+H1 {
+	Margin-Bottom: 0;
+	Margin-Left: 0;
+	Margin-Right: 0;
+	Margin-Top: -5Px;
+	Color: White;
+	Font-Weight: 400;
+	Padding-Top: 0Px;
+	Padding-Left: 30Px;
+}
+
+#Links {
+	Width: 690Px;
+	Height: 80Px;
+	Display: Flex;
+	Margin-Top: 11Px;
+	Margin-Left: Auto;
+}
+
+A {
+	Text-Decoration: None;
+	Margin:0;
+}
+
+Li A{
+	Color: White;
+}
+
+Li {
+	List-Style-Type: None;
+	Display: Inline-Block;
+	Margin-Right: 10Px;
+	Transition: Transform 0.25S;
+	Padding: 7Px;
+	Padding-Left: 12Px;
+	Padding-Right: 12Px;
+}
+
+Li:Hover {
+  Transform: TranslateY(-5Px);
+  Transition: Transform 0.3S Ease;
+}
+
+Li.Active {
+  Background: #389993;
+  Border-Radius: 2Px;
+
+}
+
+#DecibelProject {
+	Width: 100%;
+	Height:  Calc(100Vh - 85Px);
+    Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+	Flex-Direction: Column;
+}
+
+H2 {
+	Margin-Bottom: 0;
+	Margin-Left: 0;
+	Margin-Right: 0;
+	Margin-Top: -120Px;
+	Color: #2C7873;
+	Font-Weight: 500;
+	Padding-Top: 0Px;
+	Padding-Left: 0Px;
+	Font-Size: 40Px;
+	Letter-Spacing: -1Px;
+}
+
+H3 {
+	Margin-Bottom: 17Px;
+	Margin-Left: 0;
+	Margin-Right: 0;
+	Margin-Top: 2Px;
+	Color: #399C95;
+	Font-Weight: 500;
+	Padding-Top: 0Px;
+	Padding-Left: 0Px;
+	Font-Size: 20Px;
+	Letter-Spacing: -1Px;
+	Line-Height: 25Px;
+}
+
+A Button {
+	Border: 0Px;
+	Padding-Left: 30Px;
+	Padding-Right: 30Px;
+	Padding-Top: 10Px;
+	Padding-Bottom: 10Px;
+	Font-Family: "Jost";
+	Color: White;
+	Background: #2C7873;
+    Border-Radius: 2Px;
+	Transition: Background-Color 0.3S Ease; 
+}
+
+A Button:Hover {
+	Border: 10Px;
+	Padding-Left: 30Px;
+	Padding-Right: 30Px;
+	Padding-Top: 10Px;
+	Padding-Bottom: 10Px;
+	Font-Family: "Jost";
+	Color: White;
+    Border-Radius: 2Px;
+	Cursor: Pointer;
+	Background-Color: #389993;
+}
+
+#ToUpButton {
+	Width: 65Px;
+	Height: 65Px;
+	Display: None;
+    Position: Fixed;
+    Bottom: 45Px;
+    Right: 65Px;
+    Z-Index: 99;
+    Border: None;
+    OutLine: None;
+    Background-Color: #2C7873;
+    Padding: 15Px;
+    Border-Radius: 4Px;
+	Transition: Background-Color 0.3S Ease; 
+}
+
+#ToUpButton:Hover {
+    Background-Color: #389993;
+}
+
+H4 {
+	Margin-Bottom: 0;
+	Margin-Left: 0;
+	Margin-Right: 0;
+	Margin-Top: -300Px;
+	Color: #2C7873;
+	Font-Weight: 500;
+	Padding-Top: 70Px;
+	Padding-Left: 0Px;
+	Font-Size: 30Px;
+	Letter-Spacing: -1Px;
+	Flex-Direction: Column;
+	Padding-Bottom: 0;
+}
+
+#Categories {
+	Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+    Height: 80vh;
+    Margin: 0;
+    OverFlow: Hidden;
+	Flex-Direction: Column;
+}
+
+.Category {
+    Position: Relative;
+    Display: Flex;
+    Align-Items: Center;
+	Margin-Top: 100Px;
+}
+
+.Cubes {
+    Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+    Width: 1800Px; /* Width adjusted for Cubes */
+    Height: 300Px; /* Height adjusted to fit the largest Cube */
+    OverFlow: Hidden;
+    Position: Relative;
+}
+
+.Cube {
+    Position: Absolute;
+    Display: Flex;
+    Flex-Direction: Column;
+    Align-Items: Center;
+    Justify-Content: Flex-Start;
+    Box-Shadow: 0 0 10Px rgba(0, 0, 0, 0.17); /* Light grey shadow around Cubes */
+    Transition: Transform 0.5s Ease, Width 0.5s Ease, Height 0.5s Ease; /* Transition for Transform, Width, and Height */
+    Opacity: 0;
+    Transform: Scale(0);
+    Padding: 10Px;
+    Border-Radius: 2Px; /* Rounded corners */
+    Text-Align: Center;
+    Margin: 0 80Px; /* IncrEased Margin between Cubes */
+}
+
+.Cube Img {
+    Width: 125Px; /* Image Width adjusted */
+    Height: 125Px; /* Image Height adjusted */
+    Object-Fit: Cover;
+    Margin-Bottom: 0Px;
+    Margin-Top:5Px;
+}
+		
+.Cube H1 {
+    Font-Size: 20Px; /* Font size */
+    Padding-Top: 3Px;
+    Padding-Left: 0Px;
+    Margin-Bottom: -5Px;
+    Margin-Top: 6Px;
+    Color: #2C7873;
+}
+
+.Cube P {
+    Font-Size: 16Px; /* Font size */
+    Margin: 0;
+    Margin-Top:5Px;
+}
+
+.Cube Button {
+    Margin-Top: 17Px;
+    Padding: 10Px 20Px; /* Button Padding */
+    Font-Size: 14Px; /* Font size */
+    Background-Color: #2C7873; /* Button Background Color */
+    Color: White; /* Button Text Color */
+    Border: None;
+    Cursor: Default;
+    Border-Radius: 2Px; /* Rounded Button */
+    Transition: Background-Color 0.3s;
+    Font-Family: "Jost";
+}
+
+.Cube Button:Hover {
+    Background-Color: #389993; /* Button Hover Color */
+	Margin-Top: 17Px;
+    Padding: 10Px 20Px; /* Button Padding */
+    Font-Size: 14Px; /* Font size */
+	Cursor: Default;
+}
+
+.Cube.Visible {
+    Opacity: 1;
+    Transform: Scale(1);
+}
+
+.Cube.Left {
+    Width: 315Px; /* Reduced Width for Left Cube */
+    Height: 220Px; /* Reduced Height for Left Cube */
+    Transform: translateX(-400Px) Scale(1); /* Adjusted translateX */
+    Padding-Bottom:20Px;
+}
+
+.Cube.Center {
+    Width: 375Px; /* Reduced Width for Center Cube */
+    Height: 270Px; /* Reduced Height for Center Cube */
+    Transform: translateX(0) Scale(1);
+}
+
+.Cube.Right {
+    Width: 315Px; /* Reduced Width for Right Cube */
+    Height: 220Px; /* Reduced Height for Right Cube */
+    Transform: translateX(400Px) Scale(1); /* Adjusted translateX */
+    Padding-Bottom:20Px;
+}
+		
+.Cube.Left Img {
+    Width:100Px;
+    Height:100Px;
+}
+		
+.Cube.Right Img {
+    Width:100Px;
+    Height:100Px;
+}
+
+.CategoriesButton {
+    Background-Color: #2C7873;
+    Color: White;
+    Border: None;
+    Padding: 12Px; /* Button Padding */
+    Cursor: Pointer;
+    Font-Size: 24Px; /* Font size */
+    Transition: Background-Color 0.3s;
+    Border-Radius: 2Px; /* Rounded navigation Buttons */
+    Position: Absolute; /* Absolute Positioning for navigation Buttons */
+    Top: 50%;
+    Transform: TranslateY(-50%);
+    Width:55Px;
+    Height:55Px;
+}
+
+.CategoriesButton:Hover {
+    Background-Color: #389993;
+}
+
+#LeftCategoriesButton {
+    Left: 0Px; /* Adjusted Left Position */
+    Margin-Left: 250Px;
+    Z-Index: 1;
+}
+
+#RightCategoriesButton {
+    Right: 0Px; /* Adjusted Left Position */
+    Margin-Right: 250Px;
+    Z-Index: 1;
+}
+
+.Categories H3 {
+	Color: Black;
+	Margin-Top: 10Px;
+}
+
+.DialogCookies {
+    Position: Fixed;
+    Bottom: 0;
+    Left: 0;
+    Width: 100%;
+    Background: #2C7873;
+    Color: #Fff;
+    Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+    Padding: 20Px;
+    Box-Shadow: 0 -2Px 10Px Rgba(0, 0, 0, 0.2);
+    Transform: TranslateY(100%);
+    Transition: Transform 0.5S Ease-In-Out;
+    Z-Index: 1000;
+}
+
+.DialogCookies.show {
+    Transform: TranslateY(0);
+}
+
+.DialogCookiesContent {
+    Display: Flex;
+    Justify-Content: Space-Between;
+    Align-Items: Center;
+    Width: 80%;
+    Max-Width: 1200Px;
+    Flex-Wrap: Wrap;
+}
+
+.DialogCookiesContent P {
+    Margin: 0;
+    Padding-Right: 20Px;
+    Flex: 1;
+}
+
+.DialogCookiesContent A {
+    Color: #Fff;
+    Text-Decoration: UnderLine;
+}
+
+.CookiesButton {
+    Background-Color: White;
+    Color: #000;
+    Border: None;
+    Padding: 10Px 20Px;
+    Cursor: Pointer;
+    Font-Size: 16Px;
+    Border-Radius: 2Px;
+    Box-Shadow: 0 4Px 6Px Rgba(0, 0, 0, 0.1);
+    Transition: Background-Color 0.3S Ease, Transform 0.2S;
+	Font-Family: "Jost";
+}
+
+.CookiesButton:Hover {
+    Background-Color: #389993;
+	Color: White;
+    Transform: Scale(1.05);
+    Padding: 10Px 20Px;
+}
