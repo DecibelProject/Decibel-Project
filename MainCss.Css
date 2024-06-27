@@ -6,7 +6,7 @@ Html {
 }
 
 Body {
-	Background:  Url("../Images/BackLine.png");
+	Background:  Url("../Images/BackLinee.png");
 	Font-Family: "Jost", Sans-Serif;
 	Max-Width: 100%;
 	Margin: 0;
@@ -214,7 +214,7 @@ H4 {
     Opacity: 0;
     Transform: Scale(0);
     Padding: 10Px;
-    Border-Radius: 2Px; /* Rounded corners */
+    Border-Radius: 3Px; /* Rounded corners */
     Text-Align: Center;
     Margin: 0 80Px; /* IncrEased Margin between Cubes */
 }
@@ -394,4 +394,171 @@ H4 {
 	Color: White;
     Transform: Scale(1.05);
     Padding: 10Px 20Px;
+}
+
+#News {
+	Height: 50Vh;
+	Width: 80%;
+    OverFlow: Hidden;
+    Text-Align: Center;
+}
+
+#News H3 {
+	Color: #2C7873;
+	Font-Size: 25Px;
+	Font-Weight: 500;
+	Margin-Left: 4Px;
+}
+
+#MainNews {
+	Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+	Height: 70Vh;
+	margin-bottom:100vh;
+}
+
+#NewsContent {
+	Display: Flex;
+    Justify-Content: Space-Between;
+	Padding-Left: 5Px;
+	Padding-Bottom: 50Px;
+}
+
+#NewFirst {
+	Width: 24%;
+    Border-Radius: 3Px;
+    OverFlow: Hidden;
+    Box-Shadow: 0 0 10Px Rgba(0, 0, 0, 0.17); /* Light grey shadow around Cubes */
+    Transition: Background-Color 0.3S;
+    Text-Align: Left;
+	Height: 40Vh;
+
+
+            position: relative;
+
+
+}
+
+#NewSecond {
+	Width: 24%;
+    Border-Radius: 3Px;
+    OverFlow: Hidden;
+    Box-Shadow: 0 0 10Px Rgba(0, 0, 0, 0.17); /* Light grey shadow around Cubes */
+    Transition: Background-Color 0.3S;
+    Text-Align: Left;
+	Height: 40Vh;
+}
+
+#NewThird {
+	Width: 24%;
+    Border-Radius: 3Px;
+    OverFlow: Hidden;
+    Box-Shadow: 0 0 10Px Rgba(0, 0, 0, 0.17); /* Light grey shadow around Cubes */
+    Transition: Background-Color 0.3S;
+    Text-Align: Left;
+	Height: 40Vh;
+}
+
+#NewFourth {
+	Width: 24%;
+    Border-Radius: 3Px;
+    OverFlow: Hidden;
+    Box-Shadow: 0 0 10Px Rgba(0, 0, 0, 0.17); /* Light grey shadow around Cubes */
+    Transition: Background-Color 0.3S;
+    Text-Align: Left;
+	Height: 40Vh;
+}
+
+#NewFirst:Hover {
+	Background: #2C7873;
+}
+
+#NewFirst:Hover #NewsText {
+	Color: #Fff;
+}
+
+#NewFirst:Hover #NewsDate {
+	Color: #Fff;
+}
+
+#NewSecond:Hover {
+	Background: #2C7873;
+}
+
+#NewSecond:Hover #NewsText {
+	Color: #Fff;
+}
+
+#NewSecond:Hover #NewsDate {
+	Color: #Fff;
+}
+
+#NewThird:Hover {
+	Background: #2C7873;
+}
+
+#NewThird:Hover #NewsText {
+	Color: #Fff;
+}
+
+#NewThird:Hover #NewsDate {
+	Color: #Fff;
+}
+
+#NewFourth:Hover {
+	Background: #2C7873;
+}
+
+#NewFourth:Hover #NewsText {
+	Color: #Fff;
+}
+
+#NewFourth:Hover #NewsDate {
+	Color: #Fff;
+}
+
+#NewsPicture {
+	Width: 100%;
+    Height: 70%;
+}
+
+#NewsDate {
+	Font-Size: 14Px;
+    Color: #777777;
+    Margin: 10Px 15Px;
+}
+
+#NewsText {
+	Font-Size: 18Px;
+    Color: #333333;
+    Margin: 10Px 15Px;
+}
+
+.New {
+    Position: Relative;
+    OverFlow: Hidden;
+    Padding-Bottom: 0Px;
+    Transition: Padding-Bottom 0.0S Ease;
+}
+
+.New:Hover {
+    Padding-Bottom: 40Px;
+}
+
+.DescriptionNews {
+    Position: Absolute;
+    Bottom: -100%;
+    Left: 0;
+    Width: 93%;
+    Background-Color: #389993;
+    Padding: 10Px;
+    Border-Radius: 0Px 3Px 3Px 0Px;
+    Transition: Bottom 1.0S Ease;
+	Color: White;
+	Margin-Bottom: 5Px;
+}
+
+.New:hover .DescriptionNews {
+    Bottom: 0;
 }
