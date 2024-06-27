@@ -85,6 +85,47 @@
     <Button Class="CategoriesButton" Id="RightCategoriesButton"><Img Src = "Images/Right.png" /></Button>
     </Div>
 </Div>
+</Div>
+<Div Id = "MainNews">
+<Div Id = "News">
+<H3 Align = "Left">Новости мира технологий</H3>
+<Div Id = "NewsContent">
+<Div Id = "NewFirst" Class = "New">
+    <Img Src = "https://i.pinimg.com/236x/93/ed/3a/93ed3af6411e1e8b997038c74c287a8a.jpg" Alt = "Новость 1" Id = "NewsPicture">
+    <Div Id = "NewsDate">27 июня 2024</Div>
+    <Div  Id = "NewsText">Заголовок новsdsha y th yhyh yh yhy y yh yhости 1</Div>
+	<Div Id = "DescriptionNews" Class = "DescriptionNews">Нажмите на новость, чтобы читать полностью.</Div>
+</Div>
+<Div Id = "NewSecond" Class = "New">
+    <Img Src = "https://i.pinimg.com/236x/93/ed/3a/93ed3af6411e1e8b997038c74c287a8a.jpg" Alt = "Новость 1" Id = "NewsPicture">
+    <Div Id = "NewsDate">27 июня 2024</Div>
+    <Div  Id = "NewsText">Заголовок новости 1</Div>
+	<Div Id = "DescriptionNews" Class = "DescriptionNews">Нажмите на новость, чтобы читать полностью.</Div>
+</Div>
+<Div Id = "NewThird" Class = "New">
+    <Img Src = "https://i.pinimg.com/236x/93/ed/3a/93ed3af6411e1e8b997038c74c287a8a.jpg" Alt = "Новость 1" Id = "NewsPicture">
+    <Div Id = "NewsDate">27 июня 2024</Div>
+    <Div  Id = "NewsText">Заголовок новости 1</Div>
+	<Div Id = "DescriptionNews" Class = "DescriptionNews">Нажмите на новость, чтобы читать полностью.</Div>
+</Div>
+<Div Id = "NewFourth" Class = "New">
+    <Img Src = "https://i.pinimg.com/236x/93/ed/3a/93ed3af6411e1e8b997038c74c287a8a.jpg" Alt = "Новость 1" Id = "NewsPicture">
+    <Div Id = "NewsDate">27 июня 2024</Div>
+	<Div  Id = "NewsText">Заголовок новости 1</Div>
+	<Div Id = "DescriptionNews" Class = "DescriptionNews">Нажмите на новость, чтобы читать полностью.</Div>
+</Div>
+</Div>
+</Div>
+</Div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -148,15 +189,23 @@
     });
 });
 </Script>
-
-
-
-
-
-
-
-
-
-
+<Script>
+        // Первая новость
+        document.getElementById("NewFirst").addEventListener("click", function() {
+        window.location.href = "Новость1"; 
+        });
+		// Вторая новость
+        document.getElementById("NewSecond").addEventListener("click", function() {
+        window.location.href = "Новость1"; 
+        });
+		// Третья новость
+        document.getElementById("NewThird").addEventListener("click", function() {
+        window.location.href = "Новость1"; 
+        });		
+		// Четвёртая новость
+        document.getElementById("NewFourth").addEventListener("click", function() {
+        window.location.href = "Новость1"; 
+        });		
+</Script>
 </Body>
 </Html>
