@@ -6,7 +6,7 @@ Html {
 }
 
 Body {
-	Background:  Url("../Images/BackLinee.png");
+	Background:  Url("../Images/BackLine.png");
 	Font-Family: "Jost", Sans-Serif;
 	Max-Width: 100%;
 	Margin: 0;
@@ -415,7 +415,6 @@ H4 {
     Justify-Content: Center;
     Align-Items: Center;
 	Height: 70Vh;
-	margin-bottom:100vh;
 }
 
 #NewsContent {
@@ -433,11 +432,7 @@ H4 {
     Transition: Background-Color 0.3S;
     Text-Align: Left;
 	Height: 40Vh;
-
-
-            position: relative;
-
-
+    Position: Relative;
 }
 
 #NewSecond {
@@ -559,6 +554,100 @@ H4 {
 	Margin-Bottom: 5Px;
 }
 
-.New:hover .DescriptionNews {
+.New:Hover .DescriptionNews {
     Bottom: 0;
+}
+
+#MainLists {
+    Padding: 20Px;
+    Margin: 20Px Auto;
+	Height: 50Vh;
+	Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+	Flex-Direction: Column;
+	Margin-Top: 200Px;
+	MARGIN-BOTTOM:100VH;
+}
+
+#MainLists H4 {
+    Text-Align: Center;
+    Color: #2C7873;
+    Font-Weight: 500;
+	Margin-Bottom: 25Px;
+	Letter-Spacing: -1Px;
+}
+
+#Lists {
+    Display: Flex;
+    Flex-Wrap: Wrap;
+    Justify-Content: Space-Around;
+	Width: 84%;
+}
+
+#List {
+    Border-Radius: 3Px;
+    Width: 30%;
+	Height: 120%;
+    Box-Shadow: 0 2Px 5Px Rgba(0, 0, 0, 0.1);
+    Transition: Transform 0.2S;
+    Overflow: Hidden;
+}
+
+#List Img {
+    Width: 100%;
+    Height: 200Px; /* Точный размер для изображения */
+    Object-Fit: Cover; /* Сохранение пропорций и обрезка лишнего */
+    Border-Top-Left-Radius: 5Px;
+    Border-Top-Right-Radius: 5Px;
+}
+
+#List H3 {
+    Font-Size: 1.2Em;
+    Margin: 15Px;
+	Margin-Left: 25Px;
+    Color: #333333;
+}
+
+#List P {
+    Font-Size: 1Em;
+    Margin: 15Px;
+    Margin-Left: 25Px;
+    Color: #555555;
+}
+
+#ListLink {
+	Transition: Background-Color 0.3S Ease, Transform 0.2S;
+    Display: Block;
+    Text-Align: Center;
+    Margin: 15Px;
+    Padding: 10Px;
+    Background: #2C7873;
+    Color: #Ffffff;
+    Text-Decoration: None;
+    Border-Radius: 2Px;
+	Cursor: Default;
+	Margin-Right: 25Px;
+	Margin-Left: 25Px;
+}
+
+#ListLink:Hover {
+	Background-Color: #389993;
+}
+
+#List:Hover {
+
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    #List {
+        width: calc(50% - 20px); /* Две колонки на планшетах */
+    }
+}
+
+@media (max-width: 480px) {
+    #List {
+        width: 100%; /* Одна колонка на мобильных устройствах */
+    }
 }
